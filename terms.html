@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Terms of Service – VidSave – Video Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">⬇</div>
+        <div><div>VidSave</div><div class="nav-logo-sub">Video Downloader</div></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html" class="active">Terms</a>
+        <a href="support.html">Support</a>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.dovdov.vidsave" class="nav-btn" target="_blank">Get App</a>
+      <button class="burger" onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="section-label">Legal</div>
+    <h1>Terms of <span class="grad">Service</span></h1>
+    <p>Last updated: April 24, 2026</p>
+  </div>
+
+  <div class="container page-content">
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon cyan">📋</div><div class="card-title">Acceptance of Terms</div></div>
+      <p>By downloading or using VidSave ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the App.</p>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon red">⚠️</div><div class="card-title">Permitted Use</div></div>
+      <p>VidSave is intended for downloading videos for personal, non-commercial use only. You agree to:</p>
+      <ul>
+        <li>Only download content you have the right to download</li>
+        <li>Respect the intellectual property rights of content creators</li>
+        <li>Not use the App for any illegal or unauthorized purpose</li>
+        <li>Not redistribute downloaded content for commercial gain</li>
+        <li>Comply with the terms of service of the platforms you download from</li>
+      </ul>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon gold">⭐</div><div class="card-title">Premium Subscriptions</div></div>
+      <p>VidSave offers optional premium subscriptions with the following terms:</p>
+      <ul>
+        <li>Subscriptions are billed through Google Play at the rates shown in the app</li>
+        <li>Payment is charged to your Google Play account upon purchase confirmation</li>
+        <li>Subscriptions auto-renew unless cancelled at least 24 hours before the renewal date</li>
+        <li>You can manage and cancel subscriptions in your Google Play account settings</li>
+        <li>No refunds for partial subscription periods unless required by law</li>
+      </ul>
+      <div class="highlight">✦ &nbsp;Cancel anytime via Google Play → My Subscriptions.</div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon blue">🔗</div><div class="card-title">Third-Party Content</div></div>
+      <p>VidSave is not affiliated with TikTok, Instagram, YouTube, or any other platform. We do not host or store any third-party content. All downloaded content belongs to its respective owners.</p>
+      <p>We are not responsible for the content of videos downloaded through the App.</p>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon purple">🚫</div><div class="card-title">Prohibited Activities</div></div>
+      <ul>
+        <li>Reverse engineering or modifying the App</li>
+        <li>Using the App to infringe on any copyright or intellectual property</li>
+        <li>Attempting to gain unauthorized access to any system or network</li>
+        <li>Using the App in any way that could damage or overburden our services</li>
+      </ul>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon red">⚖️</div><div class="card-title">Disclaimer of Warranties</div></div>
+      <p>VidSave is provided "as is" without any warranties, express or implied. We do not guarantee that the App will be uninterrupted, error-free, or that all platforms will be supported at all times, as third-party APIs may change without notice.</p>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon green">📝</div><div class="card-title">Changes to Terms</div></div>
+      <p>We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated date. Continued use of the App after changes constitutes acceptance of the revised Terms.</p>
+    </div>
+
+    <div class="contact-card reveal">
+      <h3>Questions about Terms?</h3>
+      <p>Contact us if you have any questions about these Terms of Service.</p>
+      <a href="mailto:infinity.developers.inc@gmail.com" class="btn-primary">✉ &nbsp;infinity.developers.inc@gmail.com</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo"><div class="nav-logo-icon">⬇</div><div><div>VidSave</div><div class="nav-logo-sub">Video Downloader</div></div></div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="support.html">Support</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 VidSave – Video Downloader · <span class="grad">com.dovdov.vidsave</span></p></div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

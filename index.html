@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>VidSave – Video Downloader</title>
+  <meta name="application-name" content="VidSave – Video Downloader"/>
+  <meta name="description" content="Download TikTok, Instagram, YouTube videos in HD without watermark. Fast, free, and easy."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">⬇</div>
+        <div><div>VidSave</div><div class="nav-logo-sub">Video Downloader</div></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.dovdov.vidsave" class="nav-btn" target="_blank">Get App</a>
+      <button class="burger" onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+      <a href="https://play.google.com/store/apps/details?id=com.dovdov.vidsave" class="nav-btn" style="margin-top:10px;display:inline-block;text-align:center;" target="_blank">Get App</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><span></span>Free · No watermark · HD quality</div>
+      <h1>VidSave –<br/><span class="grad">Video Downloader</span></h1>
+      <p class="hero-sub">Download TikTok, Instagram, YouTube and 1000+ platform videos in HD quality — no watermark, no sign‑up required.</p>
+      <div class="hero-btns" id="download">
+        <a href="https://play.google.com/store/apps/details?id=com.dovdov.vidsave" class="btn-primary" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83 1-1.3 1.7-.8l14 8.5c.7.43.7 1.47 0 1.9l-14 8.5c-.7.5-1.7.03-1.7-.8z"/></svg>
+          Download on Google Play
+        </a>
+        <a href="privacy.html" class="btn-outline">Privacy Policy</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong class="grad-cyan">1000+</strong><span>Platforms</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>HD</strong><span>Quality</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>0</strong><span>Watermark</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>Free</strong><span>To Use</span></div>
+      </div>
+    </div>
+
+    <div class="hero-phone">
+      <div class="phone-wrap">
+        <div class="phone-glow"></div>
+        <div class="phone-badge"><span class="phone-badge-dot"></span>Downloading…</div>
+        <div class="phone-badge2"><span class="phone-badge2-dot"></span>No watermark ✓</div>
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">
+              <span>9:41</span>
+              <span>●●● ▌</span>
+            </div>
+            <div class="app-header">
+              <div class="app-title">VidSave</div>
+              <div class="app-icon-row">⭐ ⋮</div>
+            </div>
+            <div class="app-input">
+              <div class="input-icon">🔗</div>
+              <div class="input-text">Paste TikTok / IG link…</div>
+            </div>
+            <div class="app-btn-row">
+              <div class="app-dl-btn">⬇ Download</div>
+            </div>
+            <div class="app-card">
+              <div class="app-card-thumb"></div>
+              <div class="app-card-info">
+                <div class="app-card-title">TikTok Video · HD</div>
+                <div class="app-card-sub">No watermark</div>
+                <div class="app-progress"><div class="app-progress-bar"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORMS -->
+  <div class="platforms-strip">
+    <div class="platforms-inner">
+      <span style="font-size:12px;color:var(--text3);font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-right:8px;">Works with</span>
+      <div class="platform-pill"><span>🎵</span> TikTok</div>
+      <div class="platform-pill"><span>📸</span> Instagram</div>
+      <div class="platform-pill"><span>▶</span> YouTube</div>
+      <div class="platform-pill"><span>🐦</span> Twitter/X</div>
+      <div class="platform-pill"><span>👻</span> Snapchat</div>
+      <div class="platform-pill"><span>📘</span> Facebook</div>
+      <div class="platform-more">+1000 more platforms</div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2 class="section-title">Everything You <span class="grad">Need</span></h2>
+      <p class="section-sub">Powerful tools packed into a clean, fast app. No account required.</p>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon cyan">🚫</div>
+          <h3>No Watermark</h3>
+          <p>Download TikTok and Instagram videos in clean HD quality — completely watermark‑free.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon red">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>Multi-threaded downloads with real-time progress tracking and notification support.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon gold">🎵</div>
+          <h3>Audio Extraction</h3>
+          <p>Extract MP3 audio from any video with one tap. Perfect for saving sounds and music.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon blue">🔄</div>
+          <h3>Auto Download</h3>
+          <p>Automatically detect and download the best available quality without manual selection.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon green">📁</div>
+          <h3>Custom Folders</h3>
+          <p>Save to Downloads, Movies, Music or DCIM. You choose where your files go.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon purple">🔒</div>
+          <h3>App Lock</h3>
+          <p>Protect your download history with fingerprint or face biometric authentication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMIUM -->
+  <section class="section premium-section">
+    <div class="container">
+      <div class="section-label">Premium</div>
+      <h2 class="section-title">Go <span class="grad">Premium</span></h2>
+      <p class="section-sub">Remove all ads and unlock exclusive features with a simple subscription.</p>
+      <div class="plans-grid">
+
+        <div class="plan-card reveal">
+          <div class="plan-name">Weekly</div>
+          <div class="plan-price">$2.99<span>/wk</span></div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>Remove all ads</li>
+            <li>Auto download</li>
+            <li>Priority support</li>
+          </ul>
+        </div>
+
+        <div class="plan-card popular reveal">
+          <div class="plan-badge">Most Popular</div>
+          <div class="plan-name">Monthly</div>
+          <div class="plan-price">$4.99<span>/mo</span></div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>Remove all ads</li>
+            <li>Auto download</li>
+            <li>Audio extraction</li>
+            <li>Priority support</li>
+          </ul>
+        </div>
+
+        <div class="plan-card best reveal">
+          <div class="plan-badge best-badge">Best Value</div>
+          <div class="plan-name">Yearly</div>
+          <div class="plan-price">$19.99<span>/yr</span></div>
+          <div class="plan-note">Only $1.67 / month</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>Remove all ads</li>
+            <li>Auto download</li>
+            <li>Audio extraction</li>
+            <li>Collections</li>
+            <li>Priority support</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card reveal">
+        <h2>Start Downloading <span class="grad">Today</span></h2>
+        <p>Free to download. No sign‑up required. Works on any Android device.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.dovdov.vidsave" class="btn-primary" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83 1-1.3 1.7-.8l14 8.5c.7.43.7 1.47 0 1.9l-14 8.5c-.7.5-1.7.03-1.7-.8z"/></svg>
+          Download on Google Play
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <div class="nav-logo-icon">⬇</div>
+          <div><div>VidSave</div><div class="nav-logo-sub">Video Downloader</div></div>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="support.html">Support</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 VidSave – Video Downloader · <span class="grad">com.dovdov.vidsave</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

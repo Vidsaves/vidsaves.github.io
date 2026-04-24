@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Support – VidSave – Video Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">⬇</div>
+        <div><div>VidSave</div><div class="nav-logo-sub">Video Downloader</div></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html" class="active">Support</a>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.dovdov.vidsave" class="nav-btn" target="_blank">Get App</a>
+      <button class="burger" onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="section-label">Help Center</div>
+    <h1>How can we <span class="grad">Help?</span></h1>
+    <p>Find answers below or reach us directly — we reply within 24 hours.</p>
+  </div>
+
+  <div class="container page-content">
+
+    <!-- Quick contact cards -->
+    <div class="support-grid">
+      <div class="card reveal" style="text-align:center;">
+        <div style="font-size:38px;margin-bottom:14px;">✉️</div>
+        <div class="card-title">Email Support</div>
+        <p style="margin:10px 0 18px;">We reply within 24 hours on business days.</p>
+        <a href="mailto:infinity.developers.inc@gmail.com" class="btn-primary" style="display:inline-flex;">Send Email</a>
+      </div>
+      <div class="card reveal" style="text-align:center;">
+        <div style="font-size:38px;margin-bottom:14px;">⭐</div>
+        <div class="card-title">Rate the App</div>
+        <p style="margin:10px 0 18px;">Enjoying VidSave? Leave us a review on Google Play!</p>
+        <a href="https://play.google.com/store/apps/details?id=com.dovdov.vidsave" class="btn-primary" style="display:inline-flex;" target="_blank">Rate on Play Store</a>
+      </div>
+      <div class="card reveal" style="text-align:center;">
+        <div style="font-size:38px;margin-bottom:14px;">🔄</div>
+        <div class="card-title">Manage Subscription</div>
+        <p style="margin:10px 0 18px;">View, change, or cancel your VidSave subscription.</p>
+        <a href="https://play.google.com/store/account/subscriptions?package=com.dovdov.vidsave" class="btn-primary" style="display:inline-flex;" target="_blank">Google Play Subscriptions</a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon cyan">❓</div><div class="card-title">Frequently Asked Questions</div></div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Why can't I download a video?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a">The platform may have changed its API. Try updating the app to the latest version. If the issue persists, copy the link, paste it again, and try the download. Some private or age-restricted videos cannot be downloaded.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How do I cancel my subscription?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a">Open Google Play → tap your profile icon → Payments &amp; subscriptions → Subscriptions → VidSave → Cancel subscription. You will keep Premium access until the end of the billing period.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            I was charged but Premium is not active — what do I do?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a">Open VidSave → Settings → Premium → Restore Purchases. This re-syncs your purchase with Google Play. Make sure you are signed into the same Google account used for the purchase. If the problem continues, email us with your order ID.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Where are downloaded videos saved?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a">By default, videos are saved to the Downloads folder. You can change the save location in Settings → Save Folder. You can choose Downloads, Movies, Music, or DCIM.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Does VidSave work with Instagram Reels and YouTube Shorts?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a">Yes. Paste the link of any public Reel or Short into VidSave and tap Download. Note that downloading content from YouTube may violate YouTube's Terms of Service — please use responsibly and only download content you have the right to download.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is VidSave safe? Does it collect my data?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a">VidSave does not collect or store any personal data on external servers. Download history and preferences stay entirely on your device. We use Google AdMob for ads (free users) and Google Play Billing for subscriptions. See our Privacy Policy for full details.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How do I enable App Lock (biometric)?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a">Go to Settings → App Lock and enable the toggle. Your device must support fingerprint or face unlock. Once enabled, the app will require biometric authentication every time you open it.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I get a refund?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a">All subscription purchases are processed by Google Play. Refund requests should be submitted through Google Play's refund process at play.google.com/store/account/orderhistory. We cannot issue refunds directly, but we'll do our best to help resolve any issues.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-card reveal">
+      <h3>Still need help?</h3>
+      <p>Our support team is happy to assist you with any issue.</p>
+      <a href="mailto:infinity.developers.inc@gmail.com" class="btn-primary">✉ &nbsp;infinity.developers.inc@gmail.com</a>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo"><div class="nav-logo-icon">⬇</div><div><div>VidSave</div><div class="nav-logo-sub">Video Downloader</div></div></div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="support.html">Support</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 VidSave – Video Downloader · <span class="grad">com.dovdov.vidsave</span></p></div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+    function toggleFaq(btn) { btn.closest('.faq-item').classList.toggle('open'); }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
