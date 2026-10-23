@@ -35,99 +35,151 @@
   <div class="page-header">
     <div class="section-label">Legal</div>
     <h1>Privacy <span class="grad">Policy</span></h1>
-    <p>Last updated: August 16, 2026</p>
+    <p>Last updated: October 14, 2026</p>
   </div>
 
   <div class="container page-content">
 
     <div class="card reveal">
       <div class="card-header"><div class="card-icon cyan">📋</div><div class="card-title">Overview</div></div>
-      <p>VidSave ("we", "our", "us") is a video downloader application for Android that lets you download video and audio content from your favorite social apps and websites (YouTube is not supported). This Privacy Policy explains how we handle your information. We are committed to protecting your privacy — VidSave does not collect, sell, or share your personal data, beyond the minimum needed to fetch the content you request, as described below.</p>
+      <p>VidSave ("we", "our", "us") is an Android app that lets you save videos, music and images from social apps and websites (YouTube is not supported). It has no accounts. This policy explains what leaves your phone, why, and what stays on it. We do not sell your personal data.</p>
     </div>
 
     <div class="card reveal">
-      <div class="card-header"><div class="card-icon gold">📦</div><div class="card-title">Data We Collect</div></div>
-      <p>VidSave does <strong>not</strong> require an account and does <strong>not</strong> collect or store personal profile data on our servers. Everything except the link-resolving step below stays on your device.</p>
+      <div class="card-header"><div class="card-icon gold">📦</div><div class="card-title">Data That Leaves Your Phone</div></div>
       <ul>
-        <li>The video/audio link you paste or share into the app is sent to our resolving servers (see "Third-Party Services" below) solely to fetch the downloadable file — it is not stored after the request completes and is not linked to your identity</li>
-        <li>App usage data (screens viewed, downloads started/completed, ads shown, purchases made) is collected via Google Firebase Analytics to help us understand feature usage and fix problems — see "Third-Party Services" below</li>
-        <li>Download history is stored <strong>locally</strong> on your device only</li>
-        <li>App preferences (dark mode, language, save folder) are stored locally</li>
-        <li>No account or registration required</li>
-        <li>We do not collect your name, email, or location</li>
+        <li><strong>Links you download.</strong> When you paste or share a link and tap Download, the link is sent to a link-resolving service to find the downloadable file: TikTok links go to TikWm (tikwm.com), other links to our own resolving server. Links are processed only to answer that request and are not stored by us or tied to your identity.</li>
+        <li><strong>App usage</strong> (screens viewed, downloads started and finished, ads shown, purchases) through Google Firebase Analytics, to understand how features are used.</li>
+        <li><strong>Crash reports</strong> (what went wrong in the code, device model, Android and app version) through Google Firebase Crashlytics, to fix crashes.</li>
+        <li><strong>App settings from our server</strong> through Google Firebase Remote Config (for example how often ads may appear), which uses an app installation identifier.</li>
+        <li><strong>Advertising data</strong> collected by the ad networks listed below (advertising identifier, IP address and the approximate location derived from it, ad interactions), to show and measure ads. Premium users get no ads.</li>
+        <li><strong>Feedback you choose to send</strong> by e-mail from the app, which includes your device model and Android and app version so we can reproduce the problem.</li>
       </ul>
-      <div class="highlight">✦ &nbsp;Your download history never leaves your device — only the link you submit is sent out, and only to resolve your download.</div>
+      <p>We do not collect your name, e-mail address (unless you write to us), contacts, photos or precise location.</p>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon green">📱</div><div class="card-title">Data That Stays on Your Phone</div></div>
+      <ul>
+        <li>Your downloads, download history, favorites and collections</li>
+        <li>The private folder: hidden files are kept in the app's internal storage behind your PIN or fingerprint; the PIN is stored only as a salted hash</li>
+        <li>In-app browser data: history, bookmarks, open tabs, cookies and site data, and site icons</li>
+        <li>App preferences (theme, language, save folder, default quality)</li>
+        <li>The clipboard: when you open the app, a copied link may be suggested for download. The check happens on your phone; the clipboard is never stored or sent unless you tap Download</li>
+      </ul>
+      <div class="highlight">✦ &nbsp;Android may back up your app settings to your Google account. Downloads, history, the private folder and browser data are excluded from backups.</div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon blue">🌐</div><div class="card-title">In-App Browser</div></div>
+      <ul>
+        <li>Websites you open load directly from those sites; their own privacy policies and terms apply to what you do there</li>
+        <li>VidSave does not send your browsing history anywhere</li>
+        <li>Private tabs keep no history, and their cookies and site data are deleted when the last private tab closes</li>
+        <li>When you download from a page, your phone fetches the file directly from that site</li>
+        <li>Google does not allow account sign-in inside in-app browsers, so those pages open in your phone's own browser</li>
+        <li>"Clear browsing data" in Settings and "Clear cookies and site data" in a site's info remove this data at any time</li>
+      </ul>
     </div>
 
     <div class="card reveal">
       <div class="card-header"><div class="card-icon red">🔐</div><div class="card-title">App Permissions</div></div>
       <ul>
-        <li><strong>Internet</strong> — to fetch and download videos</li>
-        <li><strong>Storage</strong> — to save downloaded files to your device</li>
-        <li><strong>Notifications</strong> — to show download progress</li>
-        <li><strong>Biometric</strong> — optional app lock (only if enabled by you)</li>
-        <li><strong>Network State</strong> — to detect internet connectivity</li>
+        <li><strong>Internet / Network state</strong> — to resolve links, download files and detect connectivity</li>
+        <li><strong>Notifications</strong> — download progress and finished downloads; an occasional reminder if you haven't used the app for a few days (can be turned off in Settings)</li>
+        <li><strong>Foreground service</strong> — to keep downloads you started, and music you play, running in the background</li>
+        <li><strong>Fingerprint / screen lock</strong> — optional unlock of the private folder (handled by Android; we never see your biometrics)</li>
+        <li><strong>Modify system settings</strong> — only when you choose to set a sound as your ringtone</li>
+        <li><strong>Set wallpaper</strong> — only when you choose to set an image as wallpaper</li>
+        <li><strong>Storage</strong> — only on Android 9 and older, to save files</li>
       </ul>
     </div>
 
     <div class="card reveal">
       <div class="card-header"><div class="card-icon blue">🔗</div><div class="card-title">Third-Party Services</div></div>
-      <p>VidSave uses these third-party services, each with their own privacy policies:</p>
+      <p>VidSave uses these services, each with its own privacy policy:</p>
       <div class="service-list">
         <div class="service-item">
-          <div><div class="service-name">VidSave resolving servers</div><div class="service-desc">Receive the link you submit to locate and prepare the downloadable file for supported platforms</div></div>
+          <div><div class="service-name">VidSave resolving server</div><div class="service-desc">Our server (Google Cloud, EU) receives non-TikTok links to find the downloadable file</div></div>
           <span class="service-tag analytics">Processing</span>
         </div>
         <div class="service-item">
-          <div><div class="service-name">Trusted third-party resolving partners</div><div class="service-desc">Used where needed to resolve certain platform links into a downloadable file</div></div>
+          <div><div class="service-name">TikWm (tikwm.com)</div><div class="service-desc">Receives TikTok links to return the downloadable video</div></div>
           <span class="service-tag analytics">Processing</span>
         </div>
         <div class="service-item">
-          <div><div class="service-name">Google Firebase Analytics</div><div class="service-desc">Collects app usage and device data to help us understand feature usage and app performance; linked with AdMob to measure ad performance</div></div>
+          <div><div class="service-name">Google Firebase Analytics</div><div class="service-desc">App usage and device data to understand feature use; linked with AdMob to measure ads</div></div>
           <span class="service-tag analytics">Analytics</span>
         </div>
         <div class="service-item">
-          <div><div class="service-name">Google AdMob</div><div class="service-desc">Displays and mediates ads to free users</div></div>
+          <div><div class="service-name">Google Firebase Crashlytics</div><div class="service-desc">Crash reports to find and fix bugs</div></div>
+          <span class="service-tag analytics">Diagnostics</span>
+        </div>
+        <div class="service-item">
+          <div><div class="service-name">Google Firebase Remote Config</div><div class="service-desc">Delivers app settings without an update</div></div>
+          <span class="service-tag analytics">Configuration</span>
+        </div>
+        <div class="service-item">
+          <div><div class="service-name">Google AdMob</div><div class="service-desc">Shows and mediates ads to free users</div></div>
           <span class="service-tag ads">Ads</span>
         </div>
         <div class="service-item">
-          <div><div class="service-name">Yandex Mobile Ads</div><div class="service-desc">Ad mediation partner shown through AdMob</div></div>
+          <div><div class="service-name">Yandex Mobile Ads</div><div class="service-desc">Ad network shown through AdMob</div></div>
           <span class="service-tag ads">Ads</span>
         </div>
         <div class="service-item">
-          <div><div class="service-name">Meta Audience Network</div><div class="service-desc">Ad mediation partner shown through AdMob</div></div>
+          <div><div class="service-name">Meta Audience Network</div><div class="service-desc">Ad network shown through AdMob</div></div>
           <span class="service-tag ads">Ads</span>
         </div>
         <div class="service-item">
-          <div><div class="service-name">Google Play Billing</div><div class="service-desc">Processes premium subscription payments</div></div>
+          <div><div class="service-name">Google User Messaging Platform</div><div class="service-desc">Asks for and stores your ad consent where the law requires it (e.g. EEA, UK)</div></div>
+          <span class="service-tag analytics">Consent</span>
+        </div>
+        <div class="service-item">
+          <div><div class="service-name">Google Play Billing</div><div class="service-desc">Processes Premium subscription payments</div></div>
           <span class="service-tag billing">Billing</span>
         </div>
         <div class="service-item">
-          <div><div class="service-name">Google Play In-App Review</div><div class="service-desc">Prompts users to rate the app</div></div>
+          <div><div class="service-name">Google Play In-App Review and Updates</div><div class="service-desc">Lets you rate the app and install updates</div></div>
           <span class="service-tag analytics">Review</span>
         </div>
       </div>
-      <p style="margin-top:16px;">AdMob and its mediation partners (Yandex Mobile Ads, Meta Audience Network) may collect device and advertising identifiers, IP address, and app interaction data to serve and measure ads. You can opt out of personalized ads via your device's ad settings: <em>Settings → Google → Ads → Opt out of Ads Personalization</em>. You can also manage Meta's ad preferences at <a href="https://www.facebook.com/adpreferences/ad_settings" target="_blank">facebook.com/adpreferences</a>.</p>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon purple">🎯</div><div class="card-title">Your Choices</div></div>
+      <ul>
+        <li><strong>Ad consent:</strong> where required (e.g. the EEA and UK) you are asked before ads are personalized, and you can change your choice anytime in Settings → Ad Privacy Options</li>
+        <li><strong>Personalized ads:</strong> turn them off in your phone's settings (Settings → Google → Ads, or Settings → Privacy → Ads), and manage Meta ads at <a href="https://www.facebook.com/adpreferences/ad_settings" target="_blank">facebook.com/adpreferences</a></li>
+        <li><strong>Reminders:</strong> Settings → Daily reminders</li>
+        <li><strong>Local data:</strong> Settings → Clear history and Clear browsing data, or uninstall the app</li>
+        <li><strong>No ads at all:</strong> Premium, or the free "1 hour without ads" in Settings</li>
+      </ul>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-header"><div class="card-icon gold">🗂️</div><div class="card-title">Retention and Deletion</div></div>
+      <p>We keep no copy of the links you download. Analytics and crash data are kept by Google Firebase under its standard retention periods and are tied to app identifiers, not to your name. Because VidSave has no accounts, we cannot look up data by person; uninstalling the app removes its local data and resets its app identifiers, and you can reset your advertising ID in your phone's settings. For any request, write to us below.</p>
     </div>
 
     <div class="card reveal">
       <div class="card-header"><div class="card-icon green">⭐</div><div class="card-title">Premium Subscriptions</div></div>
       <ul>
-        <li>Payments processed securely by Google Play — we never see your payment info</li>
-        <li>Subscriptions auto-renew unless cancelled before the renewal date</li>
-        <li>Cancel anytime via Google Play → My Subscriptions</li>
-        <li>Premium status verified through Google Play Billing API</li>
+        <li>Payments are processed by Google Play — we never see your payment details</li>
+        <li>Subscriptions renew automatically unless cancelled before the renewal date</li>
+        <li>Cancel anytime in Google Play → Payments &amp; subscriptions → Subscriptions</li>
+        <li>Premium status is checked with Google Play Billing and remembered on your phone</li>
       </ul>
     </div>
 
     <div class="card reveal">
       <div class="card-header"><div class="card-icon purple">👶</div><div class="card-title">Children's Privacy</div></div>
-      <p>VidSave is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal data, please contact us immediately.</p>
+      <p>VidSave is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal data, please contact us.</p>
     </div>
 
     <div class="card reveal">
       <div class="card-header"><div class="card-icon cyan">🛡️</div><div class="card-title">Data Security</div></div>
-      <p>VidSave does not transmit your personal profile data (name, email, location, contacts, etc.) to external servers. The only data sent out is the link you submit for download, transmitted over secure HTTPS to our resolving servers described above, solely to fetch your requested content. Downloaded files are stored in the folder you select on your device.</p>
+      <p>Everything the app sends to our server and to TikWm travels over HTTPS. Our server limits or refuses requests that do not come from the VidSave app. Private-folder files are kept in the app's internal storage, which other apps cannot read, and are protected by Android's device encryption; a phone that has been rooted can bypass these protections.</p>
     </div>
 
     <div class="card reveal">
@@ -164,4 +216,3 @@
   </script>
 </body>
 </html>
- 
